@@ -7,9 +7,16 @@
 // Поверни свій новий масив з підходящими числами як результат.
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-"use strict"
+"use strict";
 
 function filterArray(numbers, value) {
+if (!Array.isArray(numbers) || !Number.isInteger(value)) {
+    return 'Please, enter correct array and correct number!';
+}
+// перевіряє, чи є передане значення масивом
+// перевіряє, чи є передане значення цілим числом
+
+
     const newArray = [];
     for (let i = 0; i < numbers.length; i+=1) {
         if (numbers[i] > value) {
